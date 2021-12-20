@@ -1,0 +1,151 @@
+/* Colores:
+Rojo:e63946
+Como un blanco:f1faee
+Azul claro:a8dadc
+Azul poco mas oscuro:457b9d
+Celeste medio osucro: 40BFBF
+*/
+
+/*Selectores Directos*/
+html {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #1d3557;
+}
+img {
+  max-width: 100%;
+}
+.vermas:hover {
+  color: #e63946;
+}
+.vermas:active {
+  background-color: #a8dadc;
+}
+
+/*Selectores de Clases*/
+.title {
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2em;
+}
+
+.container {
+  background: #fc5c7d;
+  background: -webkit-linear-gradient(to right, #6a82fb, #fc5c7d);
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  max-width: 960px;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  overflow: scroll;
+}
+.content {
+  padding: 1em;
+}
+
+td {
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1) {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e63946;
+}
+th {
+  display: none;
+}
+.actions {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.close {
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #e63946;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paragraph {
+  line-height: 1.8em;
+  font-weight: 200;
+}
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+.table td,
+.table th {
+  padding: 1em;
+  text-align: left;
+}
+.table tr:nth-child(even) {
+  background-color: #ffebfe;
+}
+.fa-star {
+  color: #ffd166;
+}
+.position {
+  background-color: #e63946;
+  padding: 0.5em;
+  color: white;
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+.title-item {
+  border-bottom: solid #e63946 2px;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+.address {
+  font-weight: bold;
+  color: #e63946;
+  font-size: 1.2em;
+  margin-top: 1em;
+  display: inline-block;
+}
+.image-sensei {
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+/*media queries*/
+@media (min-width: 900px) {
+    td{
+        width: auto;
+        display: table-cell;
+    }
+    th{
+        display: table-cell;
+    }
+    .content{
+        padding: 1,8em;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+}
+
+@media (min-height: 550px) {
+  .content {
+    height: 500px;
+  }
+}
